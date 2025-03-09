@@ -54,6 +54,7 @@
 
 3.  The application can handle packet loss or out-of-order delivery (e.g., DNS queries).
 
-
+## Summary
+TCP and UDP serve different purposes in network communication. TCP is ideal for those applications where reliability and data integrity are important, while UDP is better suited for those applications where speed and efficiency are more critical than reliability. 
 
 #  List the TCP Flags along with their use/function?
