@@ -58,3 +58,37 @@
 TCP and UDP serve different purposes in network communication. TCP is ideal for those applications where reliability and data integrity are important, while UDP is better suited for those applications where speed and efficiency are more critical than reliability. 
 
 #  List the TCP Flags along with their use/function?
+
+## TCP (Transmission Control Protocol) uses several flags to control the state of a connection and manage data flow. Each flag is a single bit in the TCP header, and they serve specific purposes during communication. 
+
+### Here are the TCP flags along with their functions:
+
+### 1. URG (Urgent):
+
+Indicates that the urgent pointer field is significant.
+Used to prioritize certain data. When set, the receiving system should process the urgent data immediately.
+
+### 2. ACK (Acknowledgment):
+
+Acknowledges the receipt of data.
+Indicates that the acknowledgment number in the TCP header is valid. This flag is set in most packets after the initial SYN packet in a connection.
+
+### 3. PSH (Push):
+
+Requests the receiving system to push the data to the application immediately.
+Ensures that data is delivered to the application without waiting for the buffer to fill. This is useful for real-time applications.
+
+### 4. RST (Reset):
+
+Resets the connection.
+Used to abruptly terminate a connection, usually in response to an error or an unexpected condition.
+
+### 5. SYN (Synchronize):
+
+Initiates a connection between hosts.
+Used during the three-way handshake to synchronize sequence numbers and establish a connection.
+
+### 6. FIN (Finish):
+
+Signals the end of a connection.
+Used to gracefully close a connection. When a host sends a FIN flag, it indicates that it has no more data to send.
